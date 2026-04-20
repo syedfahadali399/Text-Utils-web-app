@@ -1,4 +1,4 @@
-export default function AlertMessage({ alert }) {
+export default function Alert({ alert }) {
   return (
     <div className="h-[50px]">
       {alert && (
