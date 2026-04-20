@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import AlertMessage from "./components/alert";
-import Navbar from "./components/navbar";
-import TextForm from "./components/textform";
-import About from "./components/about";
+import AlertMessage from "./Components/Alert";
+import Navbar from "./Components/Navbar";
+import TextForm from "./Components/Textform";
+import About from "./Components/About";
 import { useState } from "react";
+import Alert from "./Components/Alert";
 
 export default function App() {
 
@@ -45,7 +46,7 @@ export default function App() {
     <div style={{background:mode.background, color:mode.color}} className="h-full">
       <Navbar title="Text Utils" mode={mode} toggleMode={toggleMode}/>
       
-        <AlertMessage alert={alert}/>
+        <Alert alert={alert}/>
         <Routes>
           <Route exact path="/" element={<TextForm mode={mode} showAlert={showAlert} />} />
           <Route exact path="/about" element={<About />} />
