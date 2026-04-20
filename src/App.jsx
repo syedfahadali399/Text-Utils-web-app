@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import TextForm from "./Components/Textform";
-import About from "./Components/About";
+import Navbar from "./components/Navbar";
+import TextForm from "./components/Textform";
+import About from "./components/About";
 import { useState } from "react";
-import Alert from "./Components/Alert";
+import Alert from "./components/Alert";
 
 export default function App() {
 
