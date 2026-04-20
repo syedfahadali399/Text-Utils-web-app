@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Alert from "./Components/Alert";
 import Navbar from "./Components/Navbar";
 import TextForm from "./Components/Textform";
 import About from "./Components/About";
