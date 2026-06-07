@@ -42,14 +42,16 @@ export default function App() {
   }
 
   return (
-    <div style={{background:mode.background, color:mode.color}} className="h-full">
+    <div style={{background:mode.background, color:mode.color}} className="min-h-screen flex flex-col">
       <Navbar title="Text Utils" mode={mode} toggleMode={toggleMode}/>
       
         <Alert alert={alert}/>
-        <Routes>
-          <Route exact path="/" element={<TextForm mode={mode} showAlert={showAlert} />} />
-          <Route exact path="/about" element={<About />} />
-        </Routes>
+        <div className="flex-grow">
+          <Routes>
+            <Route exact path="/" element={<TextForm mode={mode} showAlert={showAlert} />} />
+            <Route exact path="/about" element={<About />} />
+          </Routes>
+        </div>
       
     </div>
   )
